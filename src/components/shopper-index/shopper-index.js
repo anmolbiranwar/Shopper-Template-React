@@ -5,22 +5,22 @@ export function ShopperIndex()
     return(
         <div className="container-fluid">
             <BrowserRouter>
-            <header>
+            <header className="d-flex bg-dark text-white p-2 justify-content-between">
                 <div>
                     <h2>Shopper.</h2>
                 </div>
-                <nav>
-                    <div>Home</div>
-                    <div>Men's Fashion</div>
-                    <div>Women's Fashion</div>
-                    <div>Jewelery</div>
-                    <div>Electronics</div>
+                <nav className="d-flex">
+                    <div className="me-3">Home</div>
+                    <div className="me-3">Men's Fashion</div>
+                    <div className="me-3">Women's Fashion</div>
+                    <div className="me-3">Jewelery</div>
+                    <div className="me-3">Electronics</div>
                 </nav>
                 <div>
-                    <span className="bi bi-search"></span>
-                    <span className="bi bi-person"></span>
-                    <span className="bi bi-heart"></span>
-                    <span className="bi bi-cart4"></span>
+                    <span className="bi bi-search me-3"></span>
+                    <span className="bi bi-person me-3"></span>
+                    <span className="bi bi-heart me-3"></span>
+                    <span className="bi bi-cart4 me-3"></span>
                 </div>
             </header>
             </BrowserRouter>

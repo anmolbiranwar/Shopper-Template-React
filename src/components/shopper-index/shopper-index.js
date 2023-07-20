@@ -13,8 +13,8 @@ export function ShopperIndex()
                 </div>
                 <nav className="d-flex">
                     <div className="me-3"><Link to="home" className="btn">Home</Link></div>
-                    <div className="me-3"><Link to="category/men's fashion" className="btn">Men's Fashion</Link></div>
-                    <div className="me-3"><Link to="category/women's fashion" className="btn">Women's Fashion</Link></div>
+                    <div className="me-3"><Link to="category/men's clothing" className="btn">Men's Fashion</Link></div>
+                    <div className="me-3"><Link to="category/women's clothing" className="btn">Women's Fashion</Link></div>
                     <div className="me-3"><Link to="category/jewelery" className="btn">Jewelery</Link></div>
                     <div className="me-3"><Link to="category/electronics" className="btn">Electronics</Link></div>
                 </nav>

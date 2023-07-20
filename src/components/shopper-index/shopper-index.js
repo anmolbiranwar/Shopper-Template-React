@@ -1,5 +1,6 @@
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
 import { ShopperHome } from "../shopper-home/shopper-home"
+import { ShopperCategory } from "../shopper-category/shopper-category"
 
 export function ShopperIndex()
 {
@@ -11,11 +12,11 @@ export function ShopperIndex()
                     <h2>Shopper.</h2>
                 </div>
                 <nav className="d-flex">
-                    <div className="me-3">Home</div>
-                    <div className="me-3">Men's Fashion</div>
-                    <div className="me-3">Women's Fashion</div>
-                    <div className="me-3">Jewelery</div>
-                    <div className="me-3">Electronics</div>
+                    <div className="me-3"><Link to="home" className="btn">Home</Link></div>
+                    <div className="me-3"><Link to="category/men's fashion" className="btn">Men's Fashion</Link></div>
+                    <div className="me-3"><Link to="category/women's fashion" className="btn">Women's Fashion</Link></div>
+                    <div className="me-3"><Link to="category/jewelery" className="btn">Jewelery</Link></div>
+                    <div className="me-3"><Link to="category/electronics" className="btn">Electronics</Link></div>
                 </nav>
                 <div>
                     <span className="bi bi-search me-3"></span>
@@ -30,6 +31,8 @@ export function ShopperIndex()
             <div className="mt-3">
                 <Routes>
                     <Route path="/" element={<ShopperHome/>}/>
+                    <Route path="home" element={<ShopperHome/>}/>
+                    <Route path="category/:catname" element={<ShopperCategory/>}></Route>
                 </Routes>
             </div>
             </BrowserRouter>

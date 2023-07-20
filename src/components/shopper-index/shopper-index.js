@@ -16,6 +16,12 @@ export function ShopperIndex()
                     <div>Jewelery</div>
                     <div>Electronics</div>
                 </nav>
+                <div>
+                    <span className="bi bi-search"></span>
+                    <span className="bi bi-person"></span>
+                    <span className="bi bi-heart"></span>
+                    <span className="bi bi-cart4"></span>
+                </div>
             </header>
             </BrowserRouter>
         </div>

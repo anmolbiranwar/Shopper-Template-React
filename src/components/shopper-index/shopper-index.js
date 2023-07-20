@@ -1,11 +1,12 @@
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
+import { ShopperHome } from "../shopper-home/shopper-home"
 
 export function ShopperIndex()
 {
     return(
         <div className="container-fluid">
             <BrowserRouter>
-            <header className="d-flex bg-dark text-white p-2 justify-content-between">
+            <header className="d-flex p-1 justify-content-between">
                 <div>
                     <h2>Shopper.</h2>
                 </div>
@@ -23,6 +24,14 @@ export function ShopperIndex()
                     <span className="bi bi-cart4 me-3"></span>
                 </div>
             </header>
+            <div className="mt-2 text-center bg-dark text-white p-1">
+            ⚡ HAPPY HOLIDAY DEALS ON EVERYTHING ⚡
+            </div>
+            <div className="mt-3">
+                <Routes>
+                    <Route path="/" element={<ShopperHome/>}/>
+                </Routes>
+            </div>
             </BrowserRouter>
         </div>
     )

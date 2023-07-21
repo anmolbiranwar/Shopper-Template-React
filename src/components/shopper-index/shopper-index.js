@@ -1,6 +1,7 @@
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
 import { ShopperHome } from "../shopper-home/shopper-home"
 import { ShopperCategory } from "../shopper-category/shopper-category"
+import { ShopperDetails } from "../shopper-details/shopper-details"
 
 export function ShopperIndex()
 {
@@ -33,6 +34,7 @@ export function ShopperIndex()
                     <Route path="/" element={<ShopperHome/>}/>
                     <Route path="home" element={<ShopperHome/>}/>
                     <Route path="category/:catname" element={<ShopperCategory/>}></Route>
+                    <Route path="details/:id" element={<ShopperDetails />}></Route>
                 </Routes>
             </div>
             </BrowserRouter>

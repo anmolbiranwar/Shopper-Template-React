@@ -1,5 +1,5 @@
 import { useState, useEffect} from "react";
-import { useParams } from "react-router-dom";
+import {Link, useParams } from "react-router-dom";
 import axios from "axios";
 
 export function ShopperCategory()
@@ -29,7 +29,7 @@ export function ShopperCategory()
                                 <p>{product.title}</p>
                             </div>
                             <div className="card-footer">
-                                <button className="btn btn-primary">Details</button>
+                                <Link to={'/details/'+product.id} className="btn btn-primary">Details</Link>
                             </div>
                         </div>
                         )
